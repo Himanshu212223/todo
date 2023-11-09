@@ -1,0 +1,78 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.notes{
+    position: relative;
+    min-height: 30vh;
+    width: 20%;
+    margin: 10px 10px;
+    border-radius: 20px;
+    border: 1px dashed rgb(126, 124, 124);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    flex-flow: column;
+    transition: all 0.3s ease-in;
+}
+.notes:hover{
+    background-color: rgb(249, 242, 243);
+    /* background-color: rgb(237, 249, 255); */
+    border: 1px dashed deeppink;
+}
+.notes h2{
+    color: rgb(55, 55, 55);
+    padding-top: 10px;
+    color: deeppink;
+    /* color: deepskyblue; */
+}
+.notes .plus{
+    padding: 30px 0px ;
+    color: rgb(55, 55, 55);
+    color: pink;
+    font-size: 3rem;
+}
+.notes .content{
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+.add-note{
+    cursor: pointer;
+}
+.notes .delete{
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: rgb(231, 229, 229);
+    color: rgb(126, 124, 124);
+    color: grey;
+    transition: all 0.3s ease-in;
+}
+.notes .delete:hover{
+    color: deeppink;
+    background-color: pink;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .notes{
+        min-width: 40%;
+    }   
+}
+@media only screen and (min-width: 200px) and (max-width: 425px){
+    .main{
+        justify-content: center;
+    }
+    .notes{
+        min-width: 80%;;
+    }   
+}
