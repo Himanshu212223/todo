@@ -73,6 +73,10 @@
         justify-content: center;
     }
     .notes{
-        min-width: 80%;;
+        min-width: 40%;;
+        min-height: 20vh;
     }   
+    .notes h2{
+        font-size: 1rem;
+    }
 }
